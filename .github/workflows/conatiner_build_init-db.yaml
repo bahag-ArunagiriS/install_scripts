@@ -1,0 +1,23 @@
+name: "👷 _container build init mysql"
+
+on:
+  workflow_dispatch:
+
+
+jobs:
+  mysql-build-and-push:
+    name: "Build and Push cloud-sql container Image"
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+      id-token: write
+    environment: "dev"
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Start team checkout katalon-frontend-tests (E2E testing)
+        run: |
+          echo "Starting team checkout katalon-frontend-tests..."
