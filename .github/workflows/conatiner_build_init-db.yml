@@ -1,7 +1,8 @@
 name: "👷 _container build init mysql"
 
 on:
-  workflow_dispatch:
+  repository_dispatch:
+    types: [ dispatch-event ]
 
 
 jobs:
