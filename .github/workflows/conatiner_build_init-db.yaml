@@ -22,5 +22,3 @@ jobs:
         run: |
           echo "Starting team checkout katalon-frontend-tests..."
 
-
-s
