@@ -21,3 +21,6 @@ jobs:
       - name: Start team checkout katalon-frontend-tests (E2E testing)
         run: |
           echo "Starting team checkout katalon-frontend-tests..."
+
+
+s
